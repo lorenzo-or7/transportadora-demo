@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Rotaxis — Transporte & Logística | Protótipo Or7.dev</title>
+    <meta
+      name="description"
+      content="Soluções em transporte rodoviário, cargas fracionadas e dedicadas, distribuição, armazenagem e logística integrada. Protótipo demonstrativo desenvolvido pela Or7.dev."
+    />
+    <meta name="theme-color" content="#0B1017" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#F5F7FA" media="(prefers-color-scheme: light)" />
+    <meta name="color-scheme" content="dark light" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:title" content="Rotaxis — Transporte & Logística" />
+    <meta property="og:description" content="Movemos o que faz o mundo avançar. Protótipo comercial demonstrativo da Or7.dev." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1578857371787-189d8b9eda84?auto=format&fit=crop&w=1200&h=630&q=70" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="%BASE_URL%favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://assets.mixkit.co" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@500;600;700&display=swap"
+    />
+    <link rel="preload" as="image" href="https://assets.mixkit.co/videos/28787/28787-thumb-720-0.jpg" fetchpriority="high" />
+
+    <script>
+      // Aplica o tema salvo antes da primeira pintura (evita flash).
+      try {
+        var t = localStorage.getItem('rotaxis-theme')
+        if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p style="padding:24px;font-family:sans-serif">
+        Este protótipo precisa de JavaScript para exibir as ferramentas interativas.
+      </p>
+    </noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
